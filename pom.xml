@@ -75,6 +75,9 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                           <includedGroups>org.littleshoot.proxy.SlowTest</includedGroups>
+                          <excludes>
+                            <exclude>**/WebSocketClientServerTest*</exclude>
+                          </excludes>
                         </configuration>
                     </plugin>
                 </plugins>
